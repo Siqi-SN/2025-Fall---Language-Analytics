@@ -3,6 +3,12 @@ Xgboost
 Siqi
 2025-12-6
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  fig.path = "figure-gfm/", 
+  cache = TRUE
+)
+
 ``` r
 rm(list = ls(all.names = TRUE))
 library(tidyverse)
@@ -209,7 +215,7 @@ xg_tune_res %>%
   labs(x = NULL, y = "AUC")
 ```
 
-![](11-xgboost_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
+![](/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
 
 ``` r
 show_best(xg_tune_res,metric="roc_auc")
@@ -271,4 +277,5 @@ collect_metrics(final_res)
     ## 1 accuracy    binary         0.848 Preprocessor1_Model1
     ## 2 roc_auc     binary         0.921 Preprocessor1_Model1
     ## 3 brier_class binary         0.111 Preprocessor1_Model1
+
 
