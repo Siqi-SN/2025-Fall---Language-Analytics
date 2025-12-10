@@ -255,7 +255,7 @@ final_xgb %>%
   theme_minimal()
 ```
 
-![](11-xgboost_files/figure-gfm/unnamed-chunk-16-1.png)<!-- -->
+![](/figure-gfm/unnamed-chunk-16-1.png)<!-- -->
 
 ## Metrics
 
@@ -271,3 +271,4 @@ collect_metrics(final_res)
     ## 1 accuracy    binary         0.848 Preprocessor1_Model1
     ## 2 roc_auc     binary         0.921 Preprocessor1_Model1
     ## 3 brier_class binary         0.111 Preprocessor1_Model1
+
